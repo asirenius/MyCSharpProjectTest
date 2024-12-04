@@ -1,7 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+  <ItemGroup>
+      <None Include="README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+  
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>MyCSharpProjectTest.Library</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Andreas Sirenius</Authors>
+    <Description>A greeter application</Description>
+    <PackageTags>example;library;tool</PackageTags>
+    <RepositoryUrl>https://github.com/asirenius/MyCSharpProjectTest</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
